@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        {{user.name}}
+       {{loginStatus}}
+    </p>
+    <p>
+        <a href="sign_in.html">登录</a>
+    </p>
+    <div id="logOut">
+        
+            <button type="submit">注销</button>
+        
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        const $id= $('#logOut')
+        $id.on('click',(e)=>{
+            console.log(e)
+        });
+       // $.ajax({
+      // method: 'DELETE',
+      //  url: '/logOut',
+      //  contentType: 'text/json; charset=UTF-8',
+      //  data: JSON.stringify({name, password})
+       // }).then(()=>{
+       //     alert('注销成功')
+        //    location.href = '/log_out.html' 未建表单,之后完善！
+        //},()=>{})
+      
+    </script>
+</body>
+</html>
